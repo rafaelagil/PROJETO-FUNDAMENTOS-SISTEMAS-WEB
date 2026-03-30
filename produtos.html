@@ -1,103 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Nossos Produtos</title>
+
+<!-- Define o padrão de caracteres (acentos funcionando corretamente) -->
+<meta charset="UTF-8">
+
+<!-- Responsividade para dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título da página -->
+<title>Produtos</title>
+
+<!-- Importação do Bootstrap (estilização pronta) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS personalizado -->
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a>
-        </nav>
-        <h1>Produtos</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h3>Acessórios</h3>
-            <article>
-                <img src="imagem/produtos/cama.jpg" width="200" height="150" alt="Caminha">
-                <h3>Caminha Conforto - R$ 89,90</h3>
-                <h4>Caminha Conforto - ideal para o conforto e descanço do seu pet.
-                    possuem fundo impermeável para proteger contra umidade e frio, enchimento em fibra siliconada antialérgica para conforto, 
-                    e capas removíveis com zíper, facilitando a lavagem à máquina. Materiais duráveis como corino ou brim garantem resistência, 
-                    sendo anatômicas para não deformar
-                </h4>
-            </article>
-            <article>
-                <img src="imagem/produtos/osso.jpg" width="200" height="150" alt="Osso">
-                <h3>Osso Borracha - R$ 25,50</h3>
-                <h4>Osso Borracha - Ideal para limpeza dentária natural (remoção de tártaro), 
-                    redução de estresse e controle de ansiedade do seu bichinho.</h4>
-            </article>
-        </section>
 
-        <section>
-            <h3>Rações</h3>
-            <article>
-                <img src="imagem/produtos/racao.jpg" width="200" height="150" alt="RaçãoAdulto">
-                <h3>Ração Cão Adulto 15kg - R$ 145,00</h3>
-                <h4>A ração Pedigree é uma linha premium (com características standard) de nutrição completa e balanceada para cães, focada em saúde digestiva, 
-                    ômega 6 para pele/pelos e sem corantes artificiais na maioria das fórmulas. 
-                    Contém proteínas de alta qualidade e fibras naturais para fezes firmes, com opções para filhotes e adultos</h4>
-            </article>
-            <article>
-                <img src="imagem/produtos/racaoGatos.jpg" width="200" height="150" alt="RaçãoGatosAdultos">
-                <h3>Ração Gato Castrado 3kg - R$ 78,90</h3>
-                <h4>Formulada com teores reduzidos de gorduras e calorias, 
-                    além de níveis mais altos de fibras, visando o controle de peso e a saciedade. 
-                    Geralmente contém L-carnitina, minerais balanceados para o trato urinário e ajuda a prevenir a obesidade, comum após a castração.</h4>
-            </article>
-        </section>
+<!-- =============================
+     NAVBAR (MENU SUPERIOR)
+============================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
 
-        <section>
-            <h3>Higiene e Limpeza</h3>
-            <article>
-                <img src="imagem/produtos/tapeteHigienico.jpg" width="200" height="150" alt="tapete">
-                <h3>Tapete Higiênico 30un - R$ 49,90</h3>
-                <h4>O tapete higiênico é uma ferramenta descartável ou lavável, composta por camadas de celulose, 
-                    gel superabsorvente e polietileno, destinada a absorver a urina de cães e neutralizar odores. 
-                    Geralmente possui atrativo canino para auxiliar no treinamento, 
-                    fitas adesivas para fixação no piso ou parede e base impermeável que evita vazamentos.</h4>
-            </article>
-            <article>
-                <img src="imagem/produtos/shampoo.jpg" width="200" height="150" alt="Shampoo">
-                <h3>Shampoo Neutro 500ml - R$ 32,00</h3>
-                <h4>são formulados com pH neutro para limpar, hidratar e perfumar a pele e pelagem de cães e gatos sem causar irritações. 
-                    Disponíveis em versões para filhotes, pelos longos, claros ou sensíveis (hipoalergênicos), 
-                    eles removem sujeira e oleosidade, com opções que oferecem alto rendimento.</h4>
-            </article>
-        </section>
-    </main>
-    <footer>
-    <hr>
-    
-    <section>
-        <h3>Sobre</h3>
-        <p>PetShop Cão & Gato - Sistema Web desenvolvido para projeto acadêmico.</p>
-        <p>&copy; 2026 - Desenvolvido por Rafaela Gil. Todos os direitos reservados.</p>
-    </section>
+<!-- Nome/logo do sistema -->
+<a class="navbar-brand" href="index.html">PetShop Cão & Gato</a>
 
-    <section>
-        <h3>Contato</h3>
-        <p>Email: contato@petshop.com</p>
-        <p>Telefone: (21) 99999-9999</p>
-        <p>Endereço: Rio de Janeiro - RJ</p>
-    </section>
+<!-- Links de navegação -->
+<div class="navbar-nav ms-auto">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="produtos.html">Produtos</a>
+<a class="nav-link" href="servicos.html">Serviços</a>
+<a class="nav-link" href="cadastro.html">Agendamento</a>
+</div>
 
-    <section>
-        <h3>Navegação</h3>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a>
-        </nav>
-    </section>
+</div>
+</nav>
 
-    <p>Última atualização: 2026</p>
+
+<!-- =============================
+     CONTEÚDO PRINCIPAL
+============================= -->
+<div class="container mt-4">
+
+<!-- Título da página -->
+<h2 class="text-center">Produtos</h2>
+
+<!-- Linha de produtos -->
+<div class="row">
+
+
+<!-- =============================
+     PRODUTO 1
+============================= -->
+<div class="col-md-4">
+<div class="card">
+
+<!-- Imagem do produto -->
+<img src="imagem/produtos/cama.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<!-- Nome do produto -->
+<h5>Caminha Conforto</h5>
+
+<!-- Descrição -->
+<h6>
+Caminha Conforto - ideal para o conforto e descanso do seu pet.
+Possui fundo impermeável, enchimento antialérgico e capa removível,
+garantindo praticidade e durabilidade.
+</h6>
+
+<!-- Preço -->
+<p>R$ 89,90</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- =============================
+     PRODUTO 2
+============================= -->
+<div class="col-md-4">
+<div class="card">
+
+<!-- Imagem -->
+<img src="imagem/produtos/osso.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<!-- Nome -->
+<h5>Osso Borracha</h5>
+
+<!-- Descrição -->
+<h6>
+Ideal para limpeza dentária, redução de estresse
+e controle da ansiedade do pet.
+</h6>
+
+<!-- Preço -->
+<p>R$ 25,50</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- =============================
+     PRODUTO 3
+============================= -->
+<div class="col-md-4">
+<div class="card">
+
+<!-- Imagem -->
+<img src="imagem/produtos/racao.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<!-- Nome -->
+<h5>Ração</h5>
+
+<!-- Preço -->
+<p>R$ 145,00</p>
+
+<!-- Descrição -->
+<h6>
+Ração premium com nutrição completa, rica em proteínas,
+ômega 6 para saúde da pele e pelos, e fibras naturais
+para melhor digestão.
+</h6>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- =============================
+     RODAPÉ (FOOTER)
+============================= -->
+<footer class="text-center mt-5 p-4 bg-dark text-white">
+<div class="container py-4">
+
+<div class="row">
+
+<!-- Sobre a empresa -->
+<div class="col-md-4">
+<h5>PetShop Cão & Gato</h5>
+<p>
+Sistema de agendamento e gestão de serviços
+para cuidados do seu pet com qualidade e segurança.
+</p>
+</div>
+
+
+<!-- Links rápidos -->
+<div class="col-md-4">
+<h5>Links Rápidos</h5>
+<ul class="list-unstyled">
+<li><a href="index.html" class="text-white">Home</a></li>
+<li><a href="produtos.html" class="text-white">Produtos</a></li>
+<li><a href="servicos.html" class="text-white">Serviços</a></li>
+<li><a href="cadastro.html" class="text-white">Agendamento</a></li>
+</ul>
+</div>
+
+
+<!-- Contato -->
+<div class="col-md-4">
+<h5>Contato</h5>
+<p>Email: contato@petshop.com</p>
+<p>Telefone: (51) 99999-9999</p>
+<p>Porto Alegre - RS</p>
+</div>
+
+</div>
+
+<hr class="bg-light">
+
+<!-- Direitos autorais -->
+<div class="text-center">
+<p class="mb-0">
+© 2026 PetShop Cão & Gato - Todos os direitos reservados
+</p>
+</div>
+
+</div>
 </footer>
+
+
+<!-- Script principal do sistema -->
+<script src="js/script.js"></script>
 
 </body>
 </html>

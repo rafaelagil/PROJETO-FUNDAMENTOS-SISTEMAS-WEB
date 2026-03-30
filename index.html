@@ -1,49 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>PetShop Cão & Gato - Home</title>
+
+<!-- Define padrão de caracteres (acentos funcionando corretamente) -->
+<meta charset="UTF-8">
+
+<!-- Responsividade para dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título da página (aba do navegador) -->
+<title>PetShop Cão & Gato</title>
+
+<!-- Importação do Bootstrap (estilização pronta) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS personalizado do projeto -->
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>PetShop Cão & Gato</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="produtos.html">Produtos</a> | 
-            <a href="servicos.html">Serviços</a>  
-        </nav>
-    </header>
-    <main>
-        <h2>Bem-vindo!</h2>
-        <p>A melhor experiência para o seu pet.</p>
-        <img src="imagem/principal/banner.png" width="600" height="400" alt="Banner principal cachorro e gato" title="Banner_principal">
-    </main>
-    <footer>
-    <hr>
-    
-    <section>
-        <h3>Sobre</h3>
-        <p>PetShop Cão & Gato - Sistema Web desenvolvido para projeto acadêmico.</p>
-        <p>&copy; 2026 - Desenvolvido por Rafaela Gil. Todos os direitos reservados.</p>
-    </section>
 
-    <section>
-        <h3>Contato</h3>
-        <p>Email: contato@petshop.com</p>
-        <p>Telefone: (21) 99999-9999</p>
-        <p>Endereço: Rio de Janeiro - RJ</p>
-    </section>
+<!-- =============================
+     NAVBAR (MENU SUPERIOR)
+============================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <section>
-        <h3>Navegação</h3>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="produtos.html">Produtos</a> | 
-            <a href="servicos.html">Serviços</a>  
-        </nav>
-    </section>
+<div class="container">
 
-    <p>Última atualização: 2026</p>
+<!-- Nome / Logo do sistema -->
+<a class="navbar-brand" href="index.html">PetShop Cão & Gato</a>
+
+<!-- Botão para menu mobile (hambúrguer) -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Itens do menu (colapsável no mobile) -->
+<div class="collapse navbar-collapse" id="menu">
+
+<div class="navbar-nav ms-auto">
+
+<!-- Links de navegação -->
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="produtos.html">Produtos</a>
+<a class="nav-link" href="servicos.html">Serviços</a>
+<a class="nav-link" href="cadastro.html">Agendamento</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- =============================
+     CONTEÚDO PRINCIPAL
+============================= -->
+<div class="container mt-4">
+
+<!-- Saudação dinâmica (preenchida via JavaScript) -->
+<h3 id="saudacaoTempo" class="text-center mb-3"></h3>
+
+
+<!-- =============================
+     CARROSSEL DE IMAGENS
+============================= -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<!-- Slide 1 (ativo por padrão) -->
+<div class="carousel-item active">
+<img src="imagem/principal/banner01.jpg" class="d-block w-100">
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item">
+<img src="imagem/principal/banner21.jpg" class="d-block w-100">
+</div>
+
+<!-- Slide 3 -->
+<div class="carousel-item">
+<img src="imagem/principal/banner5.png" class="d-block w-100">
+</div>
+
+</div>
+
+<!-- Botão anterior -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- Botão próximo -->
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =============================
+     RODAPÉ (FOOTER)
+============================= -->
+<footer class="bg-dark text-white mt-5">
+
+<div class="container py-4">
+
+<div class="row">
+
+<!-- Sobre a empresa -->
+<div class="col-md-4">
+
+<h5>PetShop Cão & Gato</h5>
+
+<p>
+Sistema de agendamento e gestão de serviços
+para cuidados do seu pet com qualidade e segurança.
+</p>
+
+</div>
+
+
+<!-- Links rápidos -->
+<div class="col-md-4">
+
+<h5>Links Rápidos</h5>
+
+<ul class="list-unstyled">
+
+<li><a href="index.html" class="text-white">Home</a></li>
+<li><a href="produtos.html" class="text-white">Produtos</a></li>
+<li><a href="servicos.html" class="text-white">Serviços</a></li>
+<li><a href="cadastro.html" class="text-white">Agendamento</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- Informações de contato -->
+<div class="col-md-4">
+
+<h5>Contato</h5>
+
+<p>Email: contato@petshop.com</p>
+<p>Telefone: (51) 99999-9999</p>
+<p>Porto Alegre - RS</p>
+
+</div>
+
+</div>
+
+<!-- Linha separadora -->
+<hr class="bg-light">
+
+<!-- Direitos autorais -->
+<div class="text-center">
+<p class="mb-0">
+© 2026 PetShop Cão & Gato - Todos os direitos reservados
+</p>
+</div>
+
+</div>
+
 </footer>
+
+
+<!-- =============================
+     SCRIPTS
+============================= -->
+
+<!-- Bootstrap JS (necessário para navbar e carrossel funcionarem) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script principal do sistema -->
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
